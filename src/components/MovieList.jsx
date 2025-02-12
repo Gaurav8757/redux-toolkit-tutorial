@@ -4,10 +4,10 @@ import { removeMovie } from "../movieSlice";
 export const MovieList = () => {
   const movies = useSelector((state) => state.movies.movies);
   const dispatch = useDispatch();
-
   const handleRemoveMovie = (id) => {
     dispatch(removeMovie(id));
   };
+  
   return (
     <div className="flex bg-blue-100 justify-center flex-col">
       <h1 className="text-xl font-medium tracking-wide">Movie List</h1>
